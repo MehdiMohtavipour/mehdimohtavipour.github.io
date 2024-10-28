@@ -19,42 +19,74 @@
       line-height: 1.6;
     }
     header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 1rem 0;
-      text-align: center;
-    }
-    header {
       background-image: url('background.jpg'); /* Replace with your image URL or local path */
-      background-size: auto;
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       color: white;
-      padding: 6rem 0;
+      padding: 10rem 0;
       text-align: center;
       position: relative;
     }
-    .container {
-      max-width: 1100px;
-      margin: 20px auto;
-      padding: 20px;
+    .profile-container {
+    display: flex;
+    align-items: center;
+    max-width: 1500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
+
     .profile-img {
-      display: block;
-      margin: 0 auto;
-      width: 250px;
-      height: 250px;
-      border-radius: 50%;
-      border: 5px solid #4CAF50;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    border: 5px solid #4CAF50;
+    margin-right: 50px; /* Adds space between the image and bio */
+    }
+
+    .bio {
+    max-width: 800px;
+    text-align: left; /* Align text to the left for better readability */
+    }
+
+    .container {
+    max-width: 1500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     h1 {
       text-align: center;
       margin-top: 10px;
       color: #4CAF50;
     }
-    .bio {
-      text-align: center;
-      margin: 20px 0;
+
+    .image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 50px auto;
+    gap: 20px; /* Adds space between the images */
+    }
+
+    .image-container img {
+    width: 100%;
+    max-width: 500px; /* Ensures the images have a max width */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .myimage img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     .bio p {
       font-size: 18px;
@@ -110,6 +142,19 @@
       margin-top: 20px;
       color: #777;
     }
+    @media (max-width: 768px) {
+      .container {
+        text-align: center;
+      }
+
+      .profile-img {
+        margin: 0 auto 20px;
+      }
+
+      .bio {
+        max-width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -117,118 +162,185 @@
     <h1></h1>
   </header>
 
-  <div class="container">
+  <div class="profile-container">
     <!-- Profile Section -->
     <img src="mypicture.jpg" alt="Profile Image" class="profile-img">
-    <h1>Mehdi Mohtavipour</h1>
+    <h3>Hi! I’m "Mehdi Mohtavipour", a Ph.D. graduated in Electrical Engineering majoring Electronic field. This website is a summary of my Education, Work Experience, Technical Skills, Awards, and Publications.</h3>
     <div class="bio">
-      <p>Hi! I’m John, a software developer passionate about web design and machine learning. I love creating beautiful and functional web applications.</p>
+      <p></p>
     </div>
-
-    <!-- Experience Section -->
+</div>
+    <div class="container">
+    <!-- Education Section -->
     <section class="experience">
       <h2 class="section-title">Education</h2>
       <ul>
         <li>
-          <h3>Software Developer at XYZ Corp</h3>
-          <p>January 2020 - Present</p>
-          <p>Developing full-stack web applications and collaborating with cross-functional teams to deliver modern solutions.</p>
+          <h3>- Ph.D. Degree in Electrical Enginnering - Electronics</h3>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;IUST University</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;2016 - 2024</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Dissertation Title: Application Graph Mapping and Scheduling in Reconfigurable Processing Systems</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Thesis Grade: Excellent</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Course GPA: 4.00 / 4.00</p>
         </li>
         <li>
-          <h3>Intern at ABC Solutions</h3>
-          <p>June 2019 - December 2019</p>
-          <p>Worked on creating user-friendly websites and learning modern JavaScript frameworks.</p>
+          <h3>- Master's Degree in Electrical Enginnering - Electronics</h3>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;IUST University</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;2012 - 2014</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Dissertation Title: Design of Adaptive Cruise Control (ACC) system in autonomious vehicles through evolutionary algorithms</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Course GPA: 3.81 / 4.00</p>
         </li>
+        <li>
+            <h3>- Bachalor's Degree in Electrical Enginnering - Electronics</h3>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Guilan University</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;2008 - 2012</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Dissertation Title: Modelling of communication channel between moving targets for high-bandwidth transmission</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;Course GPA: 3.55 / 4.00</p>
+          </li>
       </ul>
     </section>
-    <!-- Experience Section -->
+
+    <!-- Work Experience Section -->
     <section class="experience">
       <h2 class="section-title">Work Experience</h2>
       <ul>
         <li>
-          <h3>Software Developer at XYZ Corp</h3>
-          <p>January 2020 - Present</p>
-          <p>Developing full-stack web applications and collaborating with cross-functional teams to deliver modern solutions.</p>
+          <h3>- Hardware Designer and Software Programmer, Neural Electronic Systems Technology Corporation, 2018 - 2023</h3>
+          <h4>&nbsp;&nbsp;1- “ParaWalk”, muscle stimulation product for standing and walking in patients with spinal cord injuries</h4>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;    8 Active Channels for Stimulating and Contraction in 8 Different Muscle groups</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;    Current-based Output Adjustable from 0 to 100mA with 1mA Resolution</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;    Battery Included with Recharging Capability</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;    Remote Installed on Walker for Wireless Communication with Main Device</p>
+          <div class="myimage">
+            <img src="parawalk.png" alt="Image 1" width="1200" height="750">
+          </div>
+          <p>&nbsp;</p>
+          <h4>&nbsp;&nbsp;2- “ParaCycle”, muscle stimulation product for cycling training in patients with spinal cord injuries</h4>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    Motor DC + Muscle Stimulation for Cycling</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    PI Controller for Smooth Cycling</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    Speed measure (RPM) by Rotary Encoder + Angle of Cycling Pedals</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    A Raspberry Pi-based Graphical User Interface</p>
+          <div class="myimage">
+            <img src="paracycle.png" alt="Image 1" width="1200" height="750">
+            <p>&nbsp;</p>
+            <h4>&nbsp;&nbsp;3- "Ultra-Low-Power Implantable Neurostimulator", an implantable device for neurostimulation with wireless power transmission capability</h4>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    A very Tiny Board for Stimulation Pulse Generation</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    8 Active Stimulation Channels</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    Pulse Amplitude Between 10-1000 uA</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    Board Size: 25×22×5 mm</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    Wireless Data Transmission Through BLE Protocol</p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;    Wireless Power Transmission for Battery Charging</p>
+            <div class="myimage">
+                <img src="implant.png" alt="Image 1" width="800" height="550">
+          </div>
         </li>
-        <li>
-          <h3>Intern at ABC Solutions</h3>
-          <p>June 2019 - December 2019</p>
-          <p>Worked on creating user-friendly websites and learning modern JavaScript frameworks.</p>
-        </li>
+        
       </ul>
     </section>
-    <!-- Experience Section -->
+
+    <!-- Technical Skills Section -->
     <section class="experience">
       <h2 class="section-title">Technical Skills</h2>
       <ul>
         <li>
-          <h3>Software Developer at XYZ Corp</h3>
-          <p>January 2020 - Present</p>
-          <p>Developing full-stack web applications and collaborating with cross-functional teams to deliver modern solutions.</p>
+          <h3>- Hardware Developing</h3>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Altium PCB CAD Design</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Microprocessor and Microcontroller Developement of Microchip and ST Family</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Wired and Wireless Data Transmission, I2C, SPI, USART, ZigBee, and Bluetooth Low Energy (BLE)</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Embedded System Development, Raspberry Pi</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Soldering and Mounting, Powersupply, Load devices, Oscilloscopes, Signal Generators</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Experience with medical regulation safety standard such as (IEC 60601) and (IEC 62304)</p>
         </li>
         <li>
-          <h3>Intern at ABC Solutions</h3>
-          <p>June 2019 - December 2019</p>
-          <p>Worked on creating user-friendly websites and learning modern JavaScript frameworks.</p>
+          <h3>- Software Programming</h3>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;C/C++ Embedded Coding for Digital Boards</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Other Programming Languages: Python, MATLAB, VHDL</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Real-time operating system for time-based scheduling, FreeRTOS</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Real-time testing environment through LabVIEW software</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Graphical User Interface (GUI) design in embedded systems through QT frameworks</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;IDEs: AtmelStudio, ST CubeMX, Python Idle, VS Code, Anaconda, ISE Xilinx</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Frameworks: QT Python GUI Developer, Kivy Python Android Developer, Tensorflow, Pytorch, OpenCV</p>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;OS: Raspbian, Linux, Windows</p>
         </li>
       </ul>
     </section>
-    <!-- Experience Section -->
+
+    <!-- Awards Section -->
     <section class="experience">
       <h2 class="section-title">Awards</h2>
       <ul>
         <li>
-          <h3>Software Developer at XYZ Corp</h3>
-          <p>January 2020 - Present</p>
-          <p>Developing full-stack web applications and collaborating with cross-functional teams to deliver modern solutions.</p>
-        </li>
-        <li>
-          <h3>Intern at ABC Solutions</h3>
-          <p>June 2019 - December 2019</p>
-          <p>Worked on creating user-friendly websites and learning modern JavaScript frameworks.</p>
+          <h3>- Winner of Scientific-Industrial Computer Vision Competition</h3>
+          <p>&nbsp;&nbsp;&nbsp;&nbsp;Proposing a machine learning framework for abnormality detection of chicken behavior in poultry houses, 2022, in 12th International Conference on Computer and Knowledge Engineering</p>
+          <div class="image-container">
+            <img src="cert.png" alt="Image 1">
+            <img src="gif1.gif" alt="Image 2">
+          </div>
+          <h3>- Rank 3 among 60 Electronic B.Sc. students after graduation</h3>
         </li>
       </ul>
+      
     </section>
-    <!-- Experience Section -->
+
+    <!-- Publications Section -->
     <section class="experience">
       <h2 class="section-title">Publications</h2>
       <ul>
         <li>
-          <h3>Software Developer at XYZ Corp</h3>
-          <p>January 2020 - Present</p>
-          <p>Developing full-stack web applications and collaborating with cross-functional teams to deliver modern solutions.</p>
-        </li>
-        <li>
-          <h3>Intern at ABC Solutions</h3>
-          <p>June 2019 - December 2019</p>
-          <p>Worked on creating user-friendly websites and learning modern JavaScript frameworks.</p>
+          <h3>Research Paper on Computer Architecture and Distributed Computing</h3>
+          <p>&nbsp;&nbsp;1- GCN-RA: A graph convolutional network-based resource allocator for reconfigurable systems. Journal of Computational Science, 2023</p>
+          <p>&nbsp;&nbsp;2- An analytically derived vectorized model for application graph mapping in interconnection networks. Journal of Ambient Intelligence and Humanized Computing, 2023</p>
+          <p>&nbsp;&nbsp;3- A quad-form clustered mapping approach for large-scale applications of reconfigurable computing systems. Computers & Electrical Engineering, 2022</p>
+          <p>&nbsp;&nbsp;4- A potential solutions-based parallelized GA for application graph mapping in reconfigurable hardware. 11th International Conference on Information and Knowledge Technology, 2020</p>
+          <p>&nbsp;&nbsp;5- A large-scale application mapping in reconfigurable hardware using deep graph convolutional network. 10th International Conference on Computer and Knowledge Engineering, 2020</p>
+          <p>&nbsp;&nbsp;6- A novel packet exchanging strategy for preventing HoL-blocking in fat-trees. Cluster Computing, 2020</p>
+          <p>&nbsp;&nbsp;7- A low-cost distributed mapping for large-scale applications of reconfigurable computing systems. International Computer Conference, 2020</p>
+          <p>&nbsp;&nbsp;8- A link-elimination partitioning approach for application graph mapping in reconfigurable computing systems. The Journal of supercomputing, 2020</p>
+          <p>&nbsp;&nbsp;9- On-Line Reusing-Based Scheduling Algorithm for 2-Dimensional Tasks in Reconfigurable Hardware. Transactions on Machine Intelligence, 2018</p>
+          <p>&nbsp;&nbsp;10- Online Task Scheduling of Dynamically Reconfigurable Architecture: A Latency-Aware Approach. 2nd International Conference on Electrical Engineering, 2017</p>
+          <h3>Research Paper on Computer Vision</h3>
+          <p>&nbsp;&nbsp;1- An accurate violence detection framework using unsupervised spatial–temporal action translation network. The Visual Computer, 2024</p>
+          <p>&nbsp;&nbsp;2- Broiler-Net: A Deep Convolutional Framework for Broiler Behavior Analysis in Poultry Houses. arXiv preprint arXiv:2401.12176, 2024</p>
+          <p>&nbsp;&nbsp;3- Violence detection in videos: a review on hand-crafted and deep-learning techniques, 2024</p>
+          <p>&nbsp;&nbsp;4- Learning deep latent space for unsupervised violence detection. Multimedia tools and applications, 2023</p>
+          <p>&nbsp;&nbsp;5- A multi-stream CNN for deep violence detection in video sequences using handcrafted features. The Visual Computer, 2022</p>
+          <p>&nbsp;&nbsp;6- DABA-net: deep acceleration-based AutoEncoder network for violence detection in surveillance cameras. International Conference on Machine Vision and Image Processing, 2022</p>
+          <p>&nbsp;&nbsp;7- Vi-Net: a deep violent flow network for violence detection in video sequences. 11th International Conference on Information and Knowledge Technology, 2020</p>
+          <h3>Research Paper on Autonomous Vehicles</h3>
+          <p>&nbsp;&nbsp;1- Smooth longitudinal driving strategy with adjustable nonlinear reference model for autonomous vehicles. International Journal of Dynamics and Control, 2023</p>
+          <p>&nbsp;&nbsp;2- An analytically derived reference signal to guarantee safety and comfort in adaptive cruise control systems. Journal of Intelligent Transportation Systems, 2021</p>
+          <p>&nbsp;&nbsp;3- A guaranteed-comfort and safe adaptive cruise control by considering driver’s acceptance level. International Journal of Dynamics and Control, 2019</p>
+          <p>&nbsp;&nbsp;4- A novel design for adaptive cruise control based on extended reference model. 4th International Conference on Knowledge-Based Engineering and Innovation, 2017</p>
+          
         </li>
       </ul>
     </section>
+
     <!-- Contact Section -->
     <section class="contact">
       <h2 class="section-title">Contact</h2>
       <div class="contact-info">
         <p>Email: mahyar.m1990@gmail.com</p>
         <p>Phone: (+31) 653151031</p>
+      </div>
       <div class="social-icons">
           <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/" title="LinkedIn" target="_blank">
+          <a href="https://www.linkedin.com/in/seyed-mehdi-mohtavipour-0a9b2486" title="LinkedIn" target="_blank">
             <i class="fab fa-linkedin-in"></i>
           </a>
           <!-- ResearchGate -->
-          <a href="https://www.researchgate.net/" title="ResearchGate" target="_blank">
+          <a href="https://www.researchgate.net/profile/Seyed-Mohtavipour" title="ResearchGate" target="_blank">
             <i class="fab fa-researchgate"></i>
           </a>
           <!-- Google Scholar -->
-          <a href="https://scholar.google.com/" title="Google Scholar" target="_blank">
+          <a href="https://scholar.google.com/citations?user=YG3LknEAAAAJ&hl=en" title="Google Scholar" target="_blank">
             <i class="fas fa-graduation-cap"></i>
           </a>
           <!-- GitHub -->
-          <a href="https://github.com/" title="GitHub" target="_blank">
+          <a href="https://github.com/MehdiMohtavipour" title="GitHub" target="_blank">
             <i class="fab fa-github"></i>
           </a>
-        </div>
+      </div>
     </section>
   </div>
 
